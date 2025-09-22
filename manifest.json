@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "Evil NJU",
+    "description": "Evil NJU is a chrome extension that helps you to cheat in NJU.",
+    "version": "1.0.0",
+
+    "icons": {
+        "16": "images/sign.png",
+        "32": "images/sign.png",
+        "48": "images/sign.png",
+        "128": "images/sign.png"
+    },
+
+    "action": {
+        "default_icon": {
+            "16": "images/sign.png",
+            "32": "images/sign.png",
+            "48": "images/sign.png",
+            "128": "images/sign.png"
+        }
+    },
+
+    "background": {
+        "service_worker": "javascripts/background.js"
+    },
+
+    "permissions": ["activeTab", "scripting"],
+
+    "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  }
+}

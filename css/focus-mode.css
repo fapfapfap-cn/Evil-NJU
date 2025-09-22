@@ -1,0 +1,15 @@
+/* Make the current page completely blank when enabled */
+
+html, body {
+  background: #ffffff !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Hide all content on the page */
+*:not(html):not(body) {
+  display: none !important;
+  visibility: hidden !important;
+}
